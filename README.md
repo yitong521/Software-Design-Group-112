@@ -5,4 +5,4 @@ When submitting your project, remember to make a [GitHub release](https://docs.g
 
 The fat Jar must be runnable using a simple `java -jar <fat jar>` command.
 
-for assignment 1 [presentation](https://docs.google.com/presentation/d/1WPon7IJvifMRLqSP--bVlCwAkMLeH5yF/edit#slide=id.g268e070e45b_2_17)
+for assignment 1 [presentation link](https://docs.google.com/presentation/d/1WPon7IJvifMRLqSP--bVlCwAkMLeH5yF/edit#slide=id.g268e070e45b_2_17)
