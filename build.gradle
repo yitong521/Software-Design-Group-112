@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 group 'org.example'
@@ -13,6 +15,14 @@ repositories {
 
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.13.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.google.cloud:google-cloud-texttospeech:2.4.0'
+    implementation files('lib/freetts.jar')
+    implementation files('lib/jsapi.jar')
+    implementation 'javazoom:jlayer:1.0.1'
+    implementation 'com.github.goxr3plus:java.google.speech.api:1.0.1'
+
 }
 
 jar {
@@ -23,4 +33,9 @@ jar {
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
+}
+
+javafx {
+    version = "17"
+    modules = ['javafx.base','javafx.controls','javafx.graphics','javafx.media','javafx.fxml']
 }

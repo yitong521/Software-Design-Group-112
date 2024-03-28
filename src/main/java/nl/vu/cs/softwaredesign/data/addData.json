@@ -1,0 +1,30 @@
+[
+  {
+    "word": "Good morning",
+    "translation": "早上好",
+    "mastered": false,
+    "id": 4,
+    "level": 2
+  },
+  {
+    "word": "Good night",
+    "translation": "晚安",
+    "mastered": false,
+    "id": 5,
+    "level": 2
+  },
+  {
+    "word": "Please",
+    "translation": "请",
+    "mastered": false,
+    "id": 6,
+    "level": 2
+  },
+  {
+    "word": "Excuse me",
+    "translation": "对不起",
+    "mastered": false,
+    "id": 7,
+    "level": 3
+  }
+]

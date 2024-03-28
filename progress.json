@@ -1,0 +1,44 @@
+[
+  {
+    "word": "Good morning",
+    "translation": "早上�?",
+    "mastered": false,
+    "id": 11,
+    "level": 2
+  },
+  {
+    "word": "Good night",
+    "translation": "晚安",
+    "mastered": false,
+    "id": 12,
+    "level": 2
+  },
+  {
+    "word": "Please",
+    "translation": "�?",
+    "mastered": false,
+    "id": 13,
+    "level": 2
+  },
+  {
+    "word": "Bye",
+    "translation": "再见",
+    "mastered": true,
+    "id": 10,
+    "level": 1
+  },
+  {
+    "word": "Hello",
+    "translation": "你好",
+    "mastered": false,
+    "id": 1,
+    "level": 1
+  },
+  {
+    "word": "Cat",
+    "translation": "猫mao",
+    "mastered": false,
+    "id": 11,
+    "level": 1
+  }
+]
