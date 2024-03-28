@@ -8,12 +8,16 @@ import javafx.stage.Stage;
 
 public class BadgeManagerUI {
 
-    private Stage stage;
+    private static BadgeManagerUI instance;
 
-    public BadgeManagerUI(Stage primaryStage) {
-        this.stage = new Stage();
-        this.stage.setTitle("Badge Manager");
-        VBox layout = new VBox(10);
+    private Stage stage;
+    private VBox layout;
+
+    // Private constructor to prevent external instantiation
+    private BadgeManagerUI() {
+        stage = new Stage();
+        stage.setTitle("Badge Manager");
+        layout = new VBox(10);
         layout.setPadding(new Insets(20));
 
         // Display completed levels
@@ -39,9 +43,17 @@ public class BadgeManagerUI {
 
         Scene scene = new Scene(layout);
         stage.setScene(scene);
-        stage.initOwner(primaryStage);
     }
 
+    // Static method to get the singleton instance
+    public static BadgeManagerUI getInstance() {
+        if (instance == null) {
+            instance = new BadgeManagerUI();
+        }
+        return instance;
+    }
+
+    // Method to show the UI
     public void show() {
         stage.show();
     }

@@ -80,9 +80,10 @@ public class Main extends Application {
 
     private void openBadgeManager(Stage primaryStage) {
         // Launch BadgeManager window
-        BadgeManagerUI badgeManagerUI = new BadgeManagerUI(primaryStage);
+        BadgeManagerUI badgeManagerUI = BadgeManagerUI.getInstance();
         badgeManagerUI.show();
     }
+
 
     public static void main(String[] args) {
         launch(args);
