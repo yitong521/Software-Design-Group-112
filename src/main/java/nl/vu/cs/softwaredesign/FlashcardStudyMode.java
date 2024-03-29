@@ -75,12 +75,25 @@ public class FlashcardStudyMode extends Application {
 
         // Set up UI components
         Button flipButton = new Button("Flip");
+        Button pronunciationButton = new Button("Pronunciation");
+
         Button openRecorderButton = new Button("Open Recorder");
         Button markMasteredButton = new Button("Mark as Mastered");
         Button skipButton = new Button("Next Word");
         Button previousButton = new Button("Previous Word");
         Button returnButton = new Button("Return");
         Button clearResultsButton = new Button("Clear All Results");
+
+        pronunciationButton.setOnAction(event -> {
+            Pronunciation audioRecorder = new Pronunciation();
+
+            if (showWord) {
+                audioRecorder.str2voice(currentFlashcard.getWord());
+            } else {
+                audioRecorder.str2voice(currentFlashcard.getTranslation());
+            }
+        });
+
 
 
         openRecorderButton.setOnAction(event -> {
@@ -233,7 +246,7 @@ public class FlashcardStudyMode extends Application {
 
     VBox root = new VBox(10);
         root.setPadding(new Insets(10));
-        root.getChildren().addAll(levelLabel, displayLabel, flipButton, markMasteredButton, openRecorderButton,skipButton, previousButton, returnButton, remainingFlashcardsLabel, clearResultsButton);
+        root.getChildren().addAll(levelLabel, displayLabel, flipButton, markMasteredButton, pronunciationButton ,openRecorderButton,skipButton, previousButton, returnButton, remainingFlashcardsLabel, clearResultsButton);
 
     // Set the scene
     Scene scene = new Scene(root, 400, 600);
