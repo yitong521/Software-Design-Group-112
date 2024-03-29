@@ -2,12 +2,17 @@ package nl.vu.cs.softwaredesign;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
+import javafx.scene.text.Font;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.util.ArrayList;
 
@@ -111,6 +116,18 @@ public class FlashcardStudyMode extends Application {
         updateRemainingFlashcardsLabel();
 
         displayLabel.setText(currentFlashcard.getWord());
+        displayLabel.setFont(Font.font(100));
+        displayLabel.setTextAlignment(TextAlignment.CENTER);
+
+        HBox displayBox = new HBox();
+        displayBox.setAlignment(Pos.CENTER);
+        displayBox.setPadding(new Insets(0, 50, 0, 50));
+        displayBox.getChildren().add(displayLabel);
+        String buttonStyle = "-fx-background-color: #37ab95; " +
+                "-fx-text-fill: white; " +
+                "-fx-font-size: 14pt; " +
+                "-fx-pref-width: 200px; " +
+                "-fx-pref-height: 40px;";
 
         previousButton.setOnAction(e -> {
             if (currentIndex > 0) {
@@ -226,6 +243,7 @@ public class FlashcardStudyMode extends Application {
 
 
 
+
         returnButton.setOnAction(e -> {
         Persistence persistence = new Persistence();
         persistence.saveProgress(flashcards, currentIndex);
@@ -244,12 +262,29 @@ public class FlashcardStudyMode extends Application {
         showWord = !showWord;
     });
 
+        flipButton.setStyle(buttonStyle);
+        markMasteredButton.setStyle(buttonStyle);
+        pronunciationButton.setStyle(buttonStyle);
+        openRecorderButton.setStyle(buttonStyle);
+        skipButton.setStyle(buttonStyle);
+        previousButton.setStyle(buttonStyle);
+        returnButton.setStyle(buttonStyle);
+        clearResultsButton.setStyle(buttonStyle);
     VBox root = new VBox(10);
         root.setPadding(new Insets(10));
-        root.getChildren().addAll(levelLabel, displayLabel, flipButton, markMasteredButton, pronunciationButton ,openRecorderButton,skipButton, previousButton, returnButton, remainingFlashcardsLabel, clearResultsButton);
+        root.getChildren().addAll(levelLabel,displayLabel, flipButton, markMasteredButton, pronunciationButton ,openRecorderButton,skipButton, previousButton, returnButton, remainingFlashcardsLabel, clearResultsButton);
 
     // Set the scene
-    Scene scene = new Scene(root, 400, 600);
+    Scene scene = new Scene(root, 600, 761);
+        FileInputStream inp = new FileInputStream("src/main/java/nl/vu/cs/softwaredesign/resources/bg.jpg");
+        Image im = new Image(inp);
+        BackgroundImage bi = new BackgroundImage(im,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundPosition.DEFAULT,
+                BackgroundSize.DEFAULT);
+        Background bg = new Background(bi);
+        root.setBackground(bg);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Flashcard Study Mode");
         primaryStage.show();

@@ -34,7 +34,8 @@ public class CreateLevel extends Application {
         layout.getChildren().addAll(levelLabel, quitButton);
 
         // Set the scene
-        Scene scene = new Scene(layout, 200, 150);
+        Scene scene = new Scene(layout, 300, 250);
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }

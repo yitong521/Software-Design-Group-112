@@ -18,12 +18,14 @@ public class Audio extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button startButton = new Button("Start Recording");
-        Button stopButton = new Button("Stop Recording");
-        Button playButton = new Button("Play Recording");
+        Button startButton = createButton("Start Recording");
+        Button stopButton = createButton("Stop Recording");
+        Button playButton = createButton("Play Recording");
 
-        VBox root = new VBox(startButton, stopButton, playButton);
-        Scene scene = new Scene(root, 200, 150);
+        VBox root = new VBox(10,startButton, stopButton, playButton);
+        root.setStyle("-fx-background-color: #f0f0f0; -fx-padding: 20px;");
+
+        Scene scene = new Scene(root, 300, 250);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Audio Recorder");
         primaryStage.show();
@@ -31,6 +33,14 @@ public class Audio extends Application {
         startButton.setOnAction(event -> startRecording());
         stopButton.setOnAction(event -> stopRecording());
         playButton.setOnAction(event -> playRecording());
+    }
+
+    private Button createButton(String text) {
+        Button button = new Button(text);
+        button.setPrefWidth(200);
+        button.setPrefHeight(40);
+        button.setStyle("-fx-background-color: #8dd3ec; -fx-text-fill: white; -fx-font-size: 14pt;");
+        return button;
     }
 
     private void startRecording() {

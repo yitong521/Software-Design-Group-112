@@ -5,17 +5,20 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+import javafx.scene.image.Image;
 
+
+import java.io.*;
 
 public class Main extends Application {
 
     private Label levelCompletedLabel;
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws FileNotFoundException {
         primaryStage.setTitle("Flashcard App");
 
         // Create buttons
@@ -37,13 +40,43 @@ public class Main extends Application {
         // Create label to display completed levels
         levelCompletedLabel = new Label("Completed Levels: 0");
 
+
+        Label welcomeLabel = new Label("Greetings, learner! \nWelcome to our Flashcard App!");
+        welcomeLabel.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size: 20pt;");
+
         // Layout for main page
-        VBox mainLayout = new VBox(10);
+
+        VBox mainLayout = new VBox(20);
         mainLayout.setPadding(new Insets(20));
-        mainLayout.getChildren().addAll(studyFlashcardsButton, printDataButton, modifyLevelButton, viewBadgesButton, exitButton, levelCompletedLabel); // Added the new label and button
+        mainLayout.getChildren().addAll(welcomeLabel,studyFlashcardsButton,printDataButton, modifyLevelButton, viewBadgesButton, exitButton, levelCompletedLabel); // Added the new label and button
+
+
+        // Set button styles
+        studyFlashcardsButton.setStyle("-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14pt;");
+        printDataButton.setStyle("-fx-background-color: #008CBA; -fx-text-fill: white; -fx-font-size: 14pt;");
+        modifyLevelButton.setStyle("-fx-background-color: #23b9e3; -fx-text-fill: white; -fx-font-size: 14pt;");
+        viewBadgesButton.setStyle("-fx-background-color: #aba6a6; -fx-text-fill: white; -fx-font-size: 14pt;");
+        exitButton.setStyle("-fx-background-color: #555555; -fx-text-fill: white; -fx-font-size: 14pt;");
+
+        VBox.setMargin(studyFlashcardsButton, new Insets(70, 0, 0, 0));
+        VBox.setMargin(printDataButton, new Insets(10, 0, 0, 0));
+        VBox.setMargin(modifyLevelButton, new Insets(10, 0, 0, 0));
+        VBox.setMargin(viewBadgesButton, new Insets(10, 0, 0, 0));
+        VBox.setMargin(exitButton, new Insets(10, 0, 0, 0));
+
 
         // Set the scene
-        Scene scene = new Scene(mainLayout, 300, 350);
+        Scene scene = new Scene(mainLayout, 600, 761);
+        FileInputStream inp = new FileInputStream("src/main/java/nl/vu/cs/softwaredesign/resources/bg.jpg");
+        Image im = new Image(inp);
+        BackgroundImage bi = new BackgroundImage(im,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundPosition.DEFAULT,
+                BackgroundSize.DEFAULT);
+        Background bg = new Background(bi);
+        mainLayout.setBackground(bg);
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }

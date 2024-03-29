@@ -1,42 +1,42 @@
 [
   {
     "word": "Good morning",
-    "translation": "鏃╀笂濂?",
+    "translation": "早上好",
     "mastered": false,
     "id": 11,
     "level": 2
   },
   {
     "word": "Good night",
-    "translation": "鏅氬畨",
+    "translation": "晚安",
     "mastered": false,
     "id": 12,
     "level": 2
   },
   {
     "word": "Please",
-    "translation": "璇?",
+    "translation": "请",
     "mastered": false,
     "id": 13,
     "level": 2
   },
   {
     "word": "Bye",
-    "translation": "鍐嶈",
-    "mastered": true,
+    "translation": "再见",
+    "mastered": false,
     "id": 10,
     "level": 1
   },
   {
     "word": "Hello",
-    "translation": "浣犲ソ",
+    "translation": "你好",
     "mastered": false,
     "id": 1,
     "level": 1
   },
   {
     "word": "Cat",
-    "translation": "鐚玬ao",
+    "translation": "猫",
     "mastered": false,
     "id": 11,
     "level": 1
