@@ -6,15 +6,15 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class BadgeManagerUI {
+public class AchievementsPageController {
 
-    private static BadgeManagerUI instance;
+    private static AchievementsPageController instance;
 
     private Stage stage;
     private VBox layout;
 
     // Private constructor to prevent external instantiation
-    private BadgeManagerUI() {
+    private AchievementsPageController() {
         stage = new Stage();
         stage.setTitle("Badge Manager");
         layout = new VBox(10);
@@ -46,9 +46,9 @@ public class BadgeManagerUI {
     }
 
     // Static method to get the singleton instance
-    public static BadgeManagerUI getInstance() {
+    public static AchievementsPageController getInstance() {
         if (instance == null) {
-            instance = new BadgeManagerUI();
+            instance = new AchievementsPageController();
         }
         return instance;
     }

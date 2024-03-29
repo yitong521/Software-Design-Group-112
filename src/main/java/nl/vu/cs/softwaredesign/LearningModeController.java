@@ -20,7 +20,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class FlashcardStudyMode extends Application {
+public class LearningModeController extends Application {
     private Flashcard[] flashcards;
     private int currentIndex;
     private Flashcard currentFlashcard;

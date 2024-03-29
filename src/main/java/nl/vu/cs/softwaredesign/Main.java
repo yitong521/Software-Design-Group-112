@@ -83,7 +83,7 @@ public class Main extends Application {
 
     private void openFlashcardStudyMode(Stage primaryStage) {
         // Launch Flashcard study mode
-        FlashcardStudyMode flashcardStudyMode = new FlashcardStudyMode();
+        LearningModeController flashcardStudyMode = new LearningModeController();
         try {
             flashcardStudyMode.start(primaryStage);
         } catch (Exception e) {
@@ -103,7 +103,7 @@ public class Main extends Application {
 
     private void openModifyLevel(Stage primaryStage) {
         // Launch ModifyLevel window
-        ModifyLevel modifyLevel = new ModifyLevel();
+        LevelPageController modifyLevel = new LevelPageController();
         try {
             modifyLevel.start(new Stage());
         } catch (Exception e) {
@@ -113,7 +113,7 @@ public class Main extends Application {
 
     private void openBadgeManager(Stage primaryStage) {
         // Launch BadgeManager window
-        BadgeManagerUI badgeManagerUI = BadgeManagerUI.getInstance();
+        AchievementsPageController badgeManagerUI = AchievementsPageController.getInstance();
         badgeManagerUI.show();
     }
 
