@@ -9,7 +9,7 @@ public class Pronunciation {
     private static Integer READ_SPEED = 0;
 
     public static void main(String[] args) {
-        String str = "hello";
+        String str = "good morning";
         str2voice(str);
     }
     public static void str2voice(String str) {
