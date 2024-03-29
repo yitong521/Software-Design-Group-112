@@ -37,9 +37,6 @@ public class Main extends Application {
         viewBadgesButton.setOnAction(e -> openBadgeManager(primaryStage)); // Action for the new button
         exitButton.setOnAction(e -> primaryStage.close());
 
-        // Create label to display completed levels
-        levelCompletedLabel = new Label("Completed Levels: 0");
-
 
         Label welcomeLabel = new Label("Greetings, learner! \nWelcome to our Flashcard App!");
         welcomeLabel.setStyle("-fx-font-family: 'Arial Black'; -fx-font-size: 20pt;");
@@ -48,7 +45,7 @@ public class Main extends Application {
 
         VBox mainLayout = new VBox(20);
         mainLayout.setPadding(new Insets(20));
-        mainLayout.getChildren().addAll(welcomeLabel,studyFlashcardsButton,printDataButton, modifyLevelButton, viewBadgesButton, exitButton, levelCompletedLabel); // Added the new label and button
+        mainLayout.getChildren().addAll(welcomeLabel,studyFlashcardsButton,printDataButton, modifyLevelButton, viewBadgesButton, exitButton); // Added the new label and button
 
 
         // Set button styles
@@ -122,8 +119,4 @@ public class Main extends Application {
         launch(args);
     }
 
-    // Method to update the displayed completed levels
-    public void updateCompletedLevels(int completedLevels) {
-        levelCompletedLabel.setText("Completed Levels: " + completedLevels);
-    }
 }

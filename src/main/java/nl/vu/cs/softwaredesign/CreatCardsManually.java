@@ -139,7 +139,7 @@ public class CreatCardsManually extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return 1; // Default ID if file doesn't exist or level has no flashcards yet
+        return 1;
     }
 
     // Method to add Flashcard to databases

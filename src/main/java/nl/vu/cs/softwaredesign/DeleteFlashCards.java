@@ -87,7 +87,7 @@ public class DeleteFlashCards extends Application {
                 if (flashcard.getWord().equals(wordToDelete)) {
                     progressData.remove(flashcard); // Remove the flashcard
                     try (FileWriter writer = new FileWriter("progress.json")) {
-                        gson.toJson(progressData, writer); // Write updated data back to file
+                        gson.toJson(progressData, writer);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -97,7 +97,7 @@ public class DeleteFlashCards extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return false; // Word not found in progress.json
+        return false;
     }
 
     // Method to show alert message

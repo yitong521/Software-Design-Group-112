@@ -189,7 +189,7 @@ public class EditFlashcards extends Application {
 
             if (updated) {
                 try (FileWriter writer = new FileWriter(fileName)) {
-                    gson.toJson(flashcards, writer); // 使用 Gson 将数据以 pretty-print 形式写入文件
+                    gson.toJson(flashcards, writer);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

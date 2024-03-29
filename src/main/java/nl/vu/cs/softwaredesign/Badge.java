@@ -19,7 +19,7 @@ public class Badge {
 
         if (totalLevelsCompleted >= 3) {
             badgeName = "Platinum";
-            iconPath = "resources/platinum_icon.png"; // Adjust the path according to your icon's location
+            iconPath = "resources/platinum_icon.png";
         } else if (totalLevelsCompleted >= 2) {
             badgeName = "Gold";
             iconPath = "resources/gold_icon.png";

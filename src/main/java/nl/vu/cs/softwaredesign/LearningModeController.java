@@ -373,7 +373,7 @@ private void clearAllResults() {
     }
     // Save the updated progress
     Persistence persistence = new Persistence();
-    persistence.saveProgress(flashcards, 0); // Assuming the current index is set to 0 after clearing results
+    persistence.saveProgress(flashcards, 0);
 }
 
 private int findIndexInFlashcards(Flashcard flashcard) {

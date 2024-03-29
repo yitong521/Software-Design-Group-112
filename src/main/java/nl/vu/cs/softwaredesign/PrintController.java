@@ -68,7 +68,7 @@ import java.lang.reflect.Type;
             importButton.setOnAction(e -> importData());
 
             // Layout for print data window
-            layout = new VBox(10); // 初始化layout
+            layout = new VBox(10);
             layout.setPadding(new Insets(20));
             layout.getChildren().addAll(masteredFlashcardsLabel, completedLevelsLabel, printButton, importButton, closeButton);
 
@@ -165,7 +165,7 @@ import java.lang.reflect.Type;
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("Mastered Flashcards", masteredFlashcardsCount);
             jsonObject.addProperty("Completed Levels", completedLevelsCount);
-            jsonObject.addProperty("Badge Name", badgeName); // Add badge name to JSON object
+            jsonObject.addProperty("Badge Name", badgeName);
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             jsonObject.addProperty("Print Date", sdf.format(new Date()));
 
