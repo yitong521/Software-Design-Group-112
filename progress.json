@@ -1,5 +1,12 @@
 [
   {
+    "word": "Excuse me",
+    "translation": "å¯¹ä¸èµ?",
+    "mastered": false,
+    "id": 17,
+    "level": 3
+  },
+  {
     "word": "Good morning",
     "translation": "ÔçÉÏºÃ",
     "mastered": false,
@@ -18,6 +25,27 @@
     "translation": "Çë",
     "mastered": false,
     "id": 13,
+    "level": 2
+  },
+  {
+    "word": "Good morning",
+    "translation": "æ—©ä¸Šå¥?",
+    "mastered": false,
+    "id": 14,
+    "level": 2
+  },
+  {
+    "word": "Good night",
+    "translation": "æ™šå®‰",
+    "mastered": false,
+    "id": 15,
+    "level": 2
+  },
+  {
+    "word": "Please",
+    "translation": "è¯?",
+    "mastered": false,
+    "id": 16,
     "level": 2
   },
   {
