@@ -1,23 +1,72 @@
 [
   {
+    "word": "Excuse me",
+    "translation": "瀵逛笉璧?",
+    "mastered": false,
+    "id": 17,
+    "level": 3
+  },
+  {
+    "word": "Good morning",
+    "translation": "早上好",
+    "mastered": false,
+    "id": 11,
+    "level": 2
+  },
+  {
+    "word": "Good night",
+    "translation": "晚安",
+    "mastered": false,
+    "id": 12,
+    "level": 2
+  },
+  {
+    "word": "Please",
+    "translation": "请",
+    "mastered": false,
+    "id": 13,
+    "level": 2
+  },
+  {
+    "word": "Good morning",
+    "translation": "鏃╀笂濂?",
+    "mastered": false,
+    "id": 14,
+    "level": 2
+  },
+  {
+    "word": "Good night",
+    "translation": "鏅氬畨",
+    "mastered": false,
+    "id": 15,
+    "level": 2
+  },
+  {
+    "word": "Please",
+    "translation": "璇?",
+    "mastered": false,
+    "id": 16,
+    "level": 2
+  },
+  {
     "word": "Bye",
-    "translation": "Dag",
+    "translation": "再见",
     "mastered": true,
-    "id": 3,
+    "id": 10,
     "level": 1
   },
   {
     "word": "Hello",
-    "translation": "Hoi",
+    "translation": "你好",
     "mastered": false,
     "id": 1,
     "level": 1
   },
   {
     "word": "Cat",
-    "translation": "Kat",
+    "translation": "猫",
     "mastered": false,
-    "id": 2,
+    "id": 11,
     "level": 1
   }
 ]
