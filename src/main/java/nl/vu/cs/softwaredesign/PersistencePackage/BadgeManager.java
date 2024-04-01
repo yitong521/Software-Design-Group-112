@@ -1,5 +1,7 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.PersistencePackage;
 
+
+import nl.vu.cs.softwaredesign.PersistencePackage.Badge;
 
 import java.util.ArrayList;
 import java.util.List;

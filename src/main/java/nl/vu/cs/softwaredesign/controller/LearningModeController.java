@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.controller;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -16,6 +16,12 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.util.ArrayList;
 
+import nl.vu.cs.softwaredesign.*;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Audio;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Pronunciation;
+import nl.vu.cs.softwaredesign.LevelPackage.Level;
+import nl.vu.cs.softwaredesign.PersistencePackage.Persistence;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

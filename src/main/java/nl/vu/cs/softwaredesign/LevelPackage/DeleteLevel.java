@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.LevelPackage;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
 
 import java.io.FileReader;
 import java.io.FileWriter;

@@ -1,10 +1,11 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.controller;
 
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import nl.vu.cs.softwaredesign.PersistencePackage.Badge;
 
 public class AchievementsPageController {
 

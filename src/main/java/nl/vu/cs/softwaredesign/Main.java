@@ -9,6 +9,10 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import javafx.scene.image.Image;
+import nl.vu.cs.softwaredesign.controller.AchievementsPageController;
+import nl.vu.cs.softwaredesign.controller.LearningModeController;
+import nl.vu.cs.softwaredesign.controller.LevelPageController;
+import nl.vu.cs.softwaredesign.controller.PrintController;
 
 
 import java.io.*;

@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.LevelPackage;
 
 
 import javafx.application.Application;
@@ -7,6 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import nl.vu.cs.softwaredesign.FlashcardPackage.CreatCardsManually;
+import nl.vu.cs.softwaredesign.FlashcardPackage.DeleteFlashCards;
+import nl.vu.cs.softwaredesign.FlashcardPackage.EditFlashcards;
 
 
 public class AdjustMode extends Application {

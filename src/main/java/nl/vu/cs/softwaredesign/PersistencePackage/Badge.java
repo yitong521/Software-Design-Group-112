@@ -1,7 +1,8 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.PersistencePackage;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import nl.vu.cs.softwaredesign.controller.PrintController;
 
 public class Badge {
     private String name;

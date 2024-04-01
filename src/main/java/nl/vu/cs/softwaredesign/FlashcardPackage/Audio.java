@@ -1,4 +1,8 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.FlashcardPackage;
+
+import com.jacob.activeX.ActiveXComponent;
+import com.jacob.com.Dispatch;
+import com.jacob.com.Variant;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -15,6 +19,9 @@ public class Audio extends Application {
 
     private TargetDataLine targetLine;
     private File outputFile;
+
+    private static Integer VOLUME = 100;
+    private static Integer READ_SPEED = 0;
 
     @Override
     public void start(Stage primaryStage) {
@@ -96,5 +103,13 @@ public class Audio extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public static void str2voice(String str) {
+        ActiveXComponent ax = new ActiveXComponent("Sapi.SpVoice");
+        Dispatch spVoice = ax.getObject();
+        ax.setProperty("Volume", new Variant(VOLUME));
+        ax.setProperty("Rate", new Variant(READ_SPEED));
+        Dispatch.call(spVoice, "Speak", new Variant(str));
     }
 }

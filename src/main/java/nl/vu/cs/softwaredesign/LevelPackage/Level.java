@@ -1,4 +1,6 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.LevelPackage;
+
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
 
 import java.util.ArrayList;
 

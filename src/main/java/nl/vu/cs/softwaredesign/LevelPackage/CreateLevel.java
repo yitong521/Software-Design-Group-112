@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.LevelPackage;
 
 import com.google.gson.Gson;
 import javafx.application.Application;
@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
 
 import java.io.FileReader;
 import java.io.IOException;

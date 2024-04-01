@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign;
+package nl.vu.cs.softwaredesign.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -11,15 +11,18 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import com.google.gson.JsonObject;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
+import nl.vu.cs.softwaredesign.LevelPackage.Level;
+import nl.vu.cs.softwaredesign.PersistencePackage.Persistence;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 
 import java.io.*;
-import java.lang.reflect.Type;
 
 
-    public class PrintController extends Application {
+public class PrintController extends Application {
 
         private VBox layout;
 
