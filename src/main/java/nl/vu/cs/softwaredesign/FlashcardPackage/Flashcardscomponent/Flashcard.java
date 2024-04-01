@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign.FlashcardPackage;
+package nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;

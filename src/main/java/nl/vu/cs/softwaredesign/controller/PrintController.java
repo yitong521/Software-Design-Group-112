@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import com.google.gson.JsonObject;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Flashcard;
 import nl.vu.cs.softwaredesign.LevelPackage.Level;
 import nl.vu.cs.softwaredesign.PersistencePackage.Persistence;
 

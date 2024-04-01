@@ -17,8 +17,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 import nl.vu.cs.softwaredesign.*;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Audio;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Audio;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Flashcard;
 import nl.vu.cs.softwaredesign.FlashcardPackage.Pronunciation;
 import nl.vu.cs.softwaredesign.LevelPackage.Level;
 import nl.vu.cs.softwaredesign.PersistencePackage.Persistence;
