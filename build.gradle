@@ -35,6 +35,6 @@ jar {
 }
 
 javafx {
-    version = "17"
+    version = "17.0.10"
     modules = ['javafx.base','javafx.controls','javafx.graphics','javafx.media','javafx.fxml']
 }
