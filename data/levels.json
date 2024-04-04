@@ -1,0 +1,4 @@
+[
+  {"word": "Hello", "translation": "你好", "level": 1, "id": 1, "mastered": false},
+  {"word": "Goodbye", "translation": "再见", "level": 1, "id": 2, "mastered": false}
+]
