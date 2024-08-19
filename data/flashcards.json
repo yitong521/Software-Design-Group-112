@@ -1,2 +1,107 @@
 [
+  {
+    "word": "Book",
+    "translation": "Boek",
+    "mastered": false,
+    "id": 5,
+    "level": 1
+  },
+  {
+    "word": "Table",
+    "translation": "Tafel",
+    "mastered": false,
+    "id": 6,
+    "level": 1
+  },
+  {
+    "word": "Computer",
+    "translation": "Computer",
+    "mastered": false,
+    "id": 7,
+    "level": 2
+  },
+  {
+    "word": "Thank you",
+    "translation": "Dank je",
+    "mastered": false,
+    "id": 9,
+    "level": 2
+  },
+  {
+    "word": "Excuse me",
+    "translation": "Excuseer",
+    "mastered": false,
+    "id": 10,
+    "level": 2
+  },
+  {
+    "word": "Good morning",
+    "translation": "Goedemorgen",
+    "mastered": false,
+    "id": 11,
+    "level": 2
+  },
+  {
+    "word": "Good night",
+    "translation": "Goedenacht",
+    "mastered": false,
+    "id": 12,
+    "level": 3
+  },
+  {
+    "word": "How are you?",
+    "translation": "Hoe gaat het?",
+    "mastered": false,
+    "id": 13,
+    "level": 3
+  },
+  {
+    "word": "I am fine",
+    "translation": "Ik ben goed",
+    "mastered": false,
+    "id": 14,
+    "level": 3
+  },
+  {
+    "word": "Water",
+    "translation": "Water",
+    "mastered": false,
+    "id": 15,
+    "level": 1
+  },
+  {
+    "word": "Food",
+    "translation": "Voedsel",
+    "mastered": false,
+    "id": 16,
+    "level": 2
+  },
+  {
+    "word": "Friend",
+    "translation": "Vriend",
+    "mastered": false,
+    "id": 17,
+    "level": 1
+  },
+  {
+    "word": "Family",
+    "translation": "Familie",
+    "mastered": false,
+    "id": 18,
+    "level": 2
+  },
+  {
+    "word": "School",
+    "translation": "School",
+    "mastered": false,
+    "id": 19,
+    "level": 1
+  },
+  {
+    "word": "Library",
+    "translation": "Bibliotheek",
+    "mastered": false,
+    "id": 20,
+    "level": 3
+  }
 ]

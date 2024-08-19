@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import com.google.gson.JsonObject;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Flashcard;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
 import nl.vu.cs.softwaredesign.LevelPackage.Level;
 import nl.vu.cs.softwaredesign.PersistencePackage.Persistence;
 
@@ -31,12 +31,13 @@ public class PrintController extends Application {
             primaryStage.setTitle("Print Data");
 
             // Load flashcards and levels
-            List<Flashcard> flashcards = Persistence.loadFlashcards("data/flashcards.json");
+            List<Flashcard> flashcards = Persistence.loadFlashcards("progress.json");
             List<Level> levels = Persistence.loadLevels();
 
             // Get the number of mastered flashcards and completed levels
             final int[] masteredFlashcardsCount = {Persistence.getFlashcardsMastered(flashcards)};
             final int[] completedLevelsCount = {Persistence.getLevelsCompleted(levels)};
+            System.out.println(Arrays.toString(masteredFlashcardsCount));
 
             // Read progress from progress.json
             int masteredFlashcardsFromProgress = readMasteredFlashcardsFromProgress();

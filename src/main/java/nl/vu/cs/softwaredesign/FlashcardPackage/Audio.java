@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent;
+package nl.vu.cs.softwaredesign.FlashcardPackage;
 
 import com.jacob.activeX.ActiveXComponent;
 import com.jacob.com.Dispatch;

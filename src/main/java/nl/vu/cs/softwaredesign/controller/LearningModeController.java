@@ -12,13 +12,14 @@ import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.util.ArrayList;
 
 import nl.vu.cs.softwaredesign.*;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Audio;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Flashcard;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Audio;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
 import nl.vu.cs.softwaredesign.FlashcardPackage.Pronunciation;
 import nl.vu.cs.softwaredesign.LevelPackage.Level;
 import nl.vu.cs.softwaredesign.PersistencePackage.Persistence;
@@ -40,7 +41,17 @@ public class LearningModeController extends Application {
     public void start(Stage primaryStage) throws Exception {
         // Load progress from progress.json
         JSONParser parser = new JSONParser();
-        try (FileReader reader = new FileReader("progress.json")) {
+        File progressFile = new File("progress.json");
+        String filename = "";
+        if (progressFile.exists()) {
+            // Load progress from progress.json
+            filename = "progress.json";
+        } else {
+            // Load flashcards from flashcards.json
+            filename = "data/flashcards.json";
+        }
+
+        try (FileReader reader = new FileReader(filename)) {
             // Parse JSON array
             JSONArray jsonArray = (JSONArray) parser.parse(reader);
 
@@ -199,6 +210,8 @@ public class LearningModeController extends Application {
             displayLabel.setText(currentFlashcard.getWord());
 
     });
+
+
         markMasteredButton.setOnAction(e -> {
             if (currentIndex < flashcards.length) {
                 // Mark the current flashcard as mastered
@@ -258,6 +271,7 @@ public class LearningModeController extends Application {
         stage.close(); // Close the current stage
         openMainPage(); // Open the main page
     });
+
 
         flipButton.setOnAction(e -> {
         if (showWord) {

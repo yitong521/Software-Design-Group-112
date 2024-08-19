@@ -1,4 +1,4 @@
-package nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent;
+package nl.vu.cs.softwaredesign.FlashcardPackage;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -44,6 +44,10 @@ public class Flashcard {
     }
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
     }
 
     // Operations

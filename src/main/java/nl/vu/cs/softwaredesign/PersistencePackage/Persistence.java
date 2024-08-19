@@ -3,7 +3,7 @@ package nl.vu.cs.softwaredesign.PersistencePackage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcardscomponent.Flashcard;
+import nl.vu.cs.softwaredesign.FlashcardPackage.Flashcard;
 import nl.vu.cs.softwaredesign.LevelPackage.Level;
 
 import java.io.*;
@@ -13,8 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 public class Persistence {
-    private static final String LEVELS_FILE = "data/levels.json";
-    private static final String FLASHCARDS_FILE = "data/flashcards.json";
+    private static final String LEVELS_FILE = "data/flashcards.json";
 
     // Load levels from JSON file
     public static List<Level> loadLevels() {
